@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacitación: Diseño y Mantenimiento de Sistemas de Riego</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f5;
+            color: #2c3e50;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1b4d3e;
+            color: #ffffff;
+            padding: 2.5rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 5px solid #2e7d32;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #1b4d3e;
+            border-bottom: 2px solid #e8ece9;
+            padding-bottom: 0.5rem;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .file-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .file-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .file-item:last-child {
+            border-bottom: none;
+        }
+        .file-name {
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #2e7d32;
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+        .btn:hover {
+            background-color: #1b5e20;
+        }
+        .btn-excel {
+            background-color: #157f43;
+            display: block;
+            text-align: center;
+            margin-top: 1rem;
+            padding: 0.8rem;
+        }
+        .btn-excel:hover {
+            background-color: #0e5c30;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Diseño y Mantenimiento de Sistemas de Riego</h1>
+        <p>Materiales Didácticos y Herramientas de Aprendizaje</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <!-- Columna Izquierda: Video de la Clase -->
+            <div class="card">
+                <h2>Video de la Sesión</h2>
+                <div class="video-container">
+                    <!-- Aquí se conectará tu video de YouTube -->
+                    <iframe src="https://www.youtube.com/embed/SgT2Uqit9wM" allowfullscreen></iframe>
+                </div>
+                <p>Visualiza la sesión completa de capacitación sobre criterios de diseño, fórmulas hidráulicas y mantenimiento preventivo de sistemas de riego localizado.</p>
+            </div>
+
+            <!-- Columna Derecha: Descargas de Archivos -->
+            <div class="card">
+                <h2>Recursos y Descargas</h2>
+                
+                <h4 style="margin-bottom: 0.5rem; color: #2e7d32;">Documentos PDF</h4>
+                <ul class="file-list">
+                    <li class="file-item">
+                        <span class="file-name">2. Determinación de Riego</span>
+                        <a href="2 - Como Determinar Cuanto y Cuanto Riego.pdf" class="btn" download>PDF</a>
+                    </li>
+                    <li class="file-item">
+                        <span class="file-name">3. Curso Operación y Mantenimiento</span>
+                        <a href="3 - Curso Especializado. Operacion y Mantenimiento de Sistemas de Riego Tecnificado.pdf" class="btn" download>PDF</a>
+                    </li>
+                    <li class="file-item">
+                        <span class="file-name">4. Manual Básico de Riego</span>
+                        <a href="4 - Manual Basico de Riego y Fertilizacion.pdf" class="btn" download>PDF</a>
+                    </li>
+                    <li class="file-item">
+                        <span class="file-name">5. Riego para Palto y Cítricos</span>
+                        <a href="5 - Manual de Riego para Palto y Citricos.pdf" class="btn" download>PDF</a>
+                    </li>
+                    <li class="file-item">
+                        <span class="file-name">6. Material Adicional 1</span>
+                        <a href="6 - Material Adicional 1..pdf" class="btn" download>PDF</a>
+                    </li>
+                    <li class="file-item">
+                        <span class="file-name">7. Riego Localizado</span>
+                        <a href="7 - Riego Localizado y Fertirrigation.pdf" class="btn" download>PDF</a>
+                    </li>
+                </ul>
+
+                <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: #157f43;">Plantilla de Cálculos</h4>
+                <p style="font-size: 0.9rem; margin: 0;">Descarga la hoja de cálculo para realizar tus operaciones de diseño de riego:</p>
+                <a href="1 - Calculos de Riego. Clase 1.xlsx" class="btn btn-excel" download>📥 Descargar Hoja de Excel</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
